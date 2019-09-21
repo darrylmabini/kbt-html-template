@@ -182,7 +182,7 @@ body {
  */
 .main-menu {
   width: 50%;
-  margin-top: 45px;
+  margin-top: 44px;
 }
 .main-menu ul {
   display: flex;
@@ -206,7 +206,7 @@ body {
  */
 .secondary-menu {
   width: 30%;
-  margin-top: 35px;
+  margin-top: 37px;
 }
 .secondary-menu ul {
   display: flex;
