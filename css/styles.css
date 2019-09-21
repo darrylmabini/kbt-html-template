@@ -395,6 +395,20 @@ body {
   background-image: url(../images/tacloban-children.jpg);
   height: 500px;
 }
+.facebook-posts {
+  overflow-y: auto;
+  height: 250px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  box-shadow: 0 4px 4px -4px #898989;
+}
+.facebook-posts ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+.facebook-posts ul li {
+  margin-bottom: 15px;
+}
 
 /**
  * Bulletin
