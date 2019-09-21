@@ -81,3 +81,34 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
+
+.font-ci {
+    font-family: 'ci';
+}
+.font-martellight {
+    font-family: 'martellight';
+}
+.font-martelbold {
+    font-family: 'martelbold';
+}
+.font-cihandregular {
+    font-family: 'cihandregular';
+}
+.font-avenirlt-heavy {
+    font-family: 'AvenirLT-Heavy';
+}
+.font-avenirlt-light {
+    font-family: 'AvenirLT-Light';
+}
+.font-avenirlt-book {
+    font-family: 'AvenirLT-Book';
+}
+.font-avenirlt-black {
+    font-family: 'AvenirLT-Black';
+}
+.font-avenirlt-roman {
+    font-family: 'AvenirLT-Roman';
+}
+.font-avenirlt-medium {
+    font-family: 'AvenirLT-Medium';
+}
