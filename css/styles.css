@@ -72,6 +72,25 @@ body {
 }
 
 /**
+ * Helpers
+ */
+.center-align-text {
+  text-align: center;
+}
+.right-align-text {
+  text-align: right;
+}
+.left-align-text {
+  text-align: left;
+}
+.right-align-element {
+  float: right;
+}
+.left-align-element {
+  float: left;
+}
+
+/**
  * Buttons
  */
 .btn {
@@ -296,6 +315,9 @@ body {
 /**
  * Content
  */
+ #content {
+   margin-bottom: 20px;
+ }
 .motto {
   color: #484848;
 }
@@ -304,7 +326,7 @@ body {
   background-size: cover;
 }
 .image-highlight {
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   border-radius: 3px;
 }
 .bg-cover {
@@ -320,6 +342,10 @@ body {
  * Footer
  */
 #footer {
-  background: #fff url(../images/bg-block.png) no-repeat 0 100%;
-  padding: 40px 0;
+  background: #507ab4 url(../images/bg-block.png) no-repeat 0 100%;
+  color: #ffffff;
+  padding: 20px 0 30px;
+}
+#footer .social-media {
+  font-size: 40rem;
 }
