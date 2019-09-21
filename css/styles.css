@@ -24,7 +24,7 @@ button{background-color:transparent; color:inherit; border-width:0; padding:0; c
 figure{margin:0;}
 input::-moz-focus-inner {border:0; padding:0; margin:0;}
 ul, ol, dd{margin:0; padding:0; list-style:none;}
-h1, h2, h3, h4, h5, h6{margin-top:0; font-weight:inherit;}
+h1, h2, h3, h4, h5, h6{margin-top:0; margin-bottom:18px; font-weight:inherit;}
 p{margin-top: 0;}
 cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
@@ -76,12 +76,15 @@ body {
  */
 .center-align-text {
   text-align: center;
+  width: 100%;
 }
 .right-align-text {
   text-align: right;
+  width: 100%;
 }
 .left-align-text {
   text-align: left;
+  width: 100%;
 }
 .right-align-element {
   float: right;
@@ -103,7 +106,17 @@ body {
 }
 .bg-yellow {
   background-color: #fed115;
-  color: #484848;
+  color: #484848 !important;
+}
+.bg-green {
+  /* background-color: #50af47; */
+  background-color: #0c884a;
+}
+.bg-light-green {
+  background-color: #91bf40;
+}
+.bg-line-white {
+  border: 3px solid #ffffff;
 }
 
 /**
@@ -299,9 +312,11 @@ body {
 }
 .row .col {
   padding: 20px;
+  position: relative;
 }
 .row .box {
   padding: 0;
+  position: relative;
 }
 .row .col-w10box.col {
   width: 10%;
@@ -386,11 +401,28 @@ body {
  */
 #bulletin {
   background-color: #ffffff;
-  padding: 40px;
+  padding: 30px 40px 40px;
 }
 #bulletin .flexbox {
   height: 360px;
   overflow: hidden;
+}
+#bulletin .text-overlay-top {
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 20px 0;
+}
+#bulletin .text-overlay-bottom {
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 20px 20px 40px;
+}
+#bulletin .text-overlay h3 {
+  text-transform: uppercase;
 }
 
 /**
@@ -403,4 +435,12 @@ body {
 }
 #footer .social-media {
   font-size: 40rem;
+}
+#footer .legal-notice {
+  display: flex;
+  font-size: 13rem;
+  justify-content: center;
+}
+#footer .legal-notice li {
+  margin: 0 20px;
 }
