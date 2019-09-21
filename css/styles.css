@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+
+html {
+  font-size: 1px;/*for using REM units*/
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'AvenirLT-Roman', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555;
+  padding: 0;
+  margin: 0;
+}
+
+a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin-top:0; font-weight:inherit;}
+
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;}
+
+h1 {
+  font-size: 36px
+}
+
+h2 {
+  font-size: 30px
+}
+
+h3 {
+  font-size: 24px
+}
+
+h4 {
+  font-size: 18px
+}
+
+h5 {
+  font-size: 14px
+}
+
+h6 {
+  font-size: 12px
+}
+
+body {
+  background-color: #f6f4f3;
+  font-family: "AvenirLT-Roman";
+  font-size: 16rem;
+  position: relative;
+}
+.container {
+  width: 1100px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/**
+ * Buttons
+ */
+.btn {
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "AvenirLT-Heavy";
+  font-size: 14rem;
+}
+.btn-red {
+  background-color: #d31f27;
+}
+.btn-blue {
+  background-color: #507ab4;
+}
+.btn-yellow {
+  background-color: #fed115;
+  color: #484848;
+}
+
+/**
+ * Header
+ */
+#header {
+  background-color: #fff;
+  box-shadow: 0 4px 4px -4px #898989;
+  color: #484848;
+  left: 0;
+  font-size: 14rem;
+  padding: 10px 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  height: 110px;
+}
+
+/**
+ * Logo
+ */
+.logo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: 0 4px 5px -1px #898989;
+}
+
+/**
+ * Main menu
+ */
+.main-menu {
+  width: 50%;
+  margin-top: 35px;
+}
+.main-menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-menu ul li {
+  margin: 0 20px;
+}
+.main-menu ul li a {
+  color: #484848;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+.main-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Secondary Menu
+ */
+.secondary-menu {
+  width: 30%;
+  margin-top: 25px;
+}
+.secondary-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.secondary-menu ul li {
+  margin-left: 5px;
+  width: 31%;
+}
+.secondary-menu ul li a {
+  color: #fff;
+  background-color: #d31f27;
+  border-radius: 3px;
+  font-family: "AvenirLT-Heavy";
+  font-size: 14rem;
+  height: 32px;
+  line-height: 2.3em;
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+  width: 100%;
+}
+.secondary-menu ul li:nth-child(2) a {
+  background-color: #507ab4;
+}
+.secondary-menu ul li:nth-child(3) a {
+  background-color: #fed115;
+  color: #484848;
+}
+
+/**
+ * Slider
+ */
+#slider {
+  background-image: url(../images/happy-children.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  filter: contrast(1.1);
+}
+#slider .message {
+  font-family: "AvenirLT-Black";
+  color: #ffffff;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-shadow: #000000 1px 1px 15px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 90%);
+}
+#slider .message h2 {
+  line-height: 7vw;
+  font-size: 620%;
+  margin-bottom: 0;
+}
+#slider .message span {
+  font-family: 'cihandregular';
+  font-size: 70%;
+  text-transform: none;
+  text-shadow: 1px 1px 15px #000;
+  line-height: 160%;
+}
+#slider .message .sub {
+  font-family: 'AvenirLT-Roman';
+  font-size: 24rem;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#slider .message .sponsor {
+  font-size: 14rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  line-height: normal;
+}
+#slider .message .sponsor button {
+  font-size: 14rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  line-height: normal;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .column {
+  padding: 10px;
+}
