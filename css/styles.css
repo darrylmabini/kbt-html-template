@@ -23,7 +23,7 @@ a{text-decoration:none; color:inherit; cursor:pointer;}
 button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
 figure{margin:0;}
 input::-moz-focus-inner {border:0; padding:0; margin:0;}
-ul, ol, dd{margin:0; padding:0; list-style:none;}
+ul, ol, dd{margin-top:0; margin-bottom:15px; padding:0; list-style:none;}
 h1, h2, h3, h4, h5, h6{margin-top:0; margin-bottom:18px; font-weight:inherit;}
 p{margin-top: 0;}
 cite {font-style:normal;}
@@ -63,7 +63,7 @@ body {
   position: relative;
 }
 .container {
-  width: 1100px;
+  width: 100%;
   display: flex;
   margin: 0 auto;
   position: relative;
@@ -376,7 +376,7 @@ body {
  #content {
    margin-bottom: 20px;
  }
-.motto {
+.mission {
   color: #484848;
 }
 .video-highlight {
@@ -446,4 +446,13 @@ body {
 }
 #footer .legal-notice a:hover {
   text-decoration: underline;
+}
+
+/**
+ * Media Queries
+ */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
 }
