@@ -244,7 +244,7 @@ body {
  * Secondary Menu
  */
 .secondary-menu {
-  width: 30%;
+  width: 35%;
   margin-top: 37px;
 }
 .secondary-menu ul {
@@ -514,7 +514,7 @@ body {
     padding: 0 20px;
   }
   .main-menu {
-    width: 45%;
+    width: 44%;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -572,6 +572,15 @@ body {
   }
   #bulletin .box-w50 .text-overlay {
     width: 55%;
+  }
+  #footer .row {
+    flex-wrap: wrap;
+  }
+  #footer .col {
+    width: 100%;
+  }
+  #footer .legal-notice li {
+    margin: 0 10px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -642,6 +651,10 @@ body {
   }
   .secondary-menu ul li {
     width: 29%;
+  }
+  #slider .message h2 {
+    font-size: 450%;
+    line-height: 10vw;
   }
 }
 @media only screen and (max-width: 360px) {
