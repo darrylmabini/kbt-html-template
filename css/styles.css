@@ -578,6 +578,15 @@ body {
   .facebook-posts {
     height: 320px;
   }
+  .content-media.row {
+    flex-wrap: wrap;
+  }
+  .content-media .col {
+    width: 100%;
+  }
+  .video-highlight, .image-highlight {
+    height: auto;
+  }
   #bulletin .box-w50 {
     width: 100%;
   }
@@ -642,9 +651,6 @@ body {
     flex-wrap: wrap !important;
   }
   .facebook-posts {
-    height: auto;
-  }
-  .video-highlight, .image-highlight {
     height: auto;
   }
 }
