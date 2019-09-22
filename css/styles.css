@@ -189,31 +189,38 @@ body {
  */
 .logo {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 210px;
+  height: 70px;
   z-index: 2;
+  top: 15px;
 }
 .logo img {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 50%;
-  box-shadow: 0 4px 5px -1px #898989;
+  height: 100%;
+  /* border-radius: 50%;
+  box-shadow: 0 4px 5px -1px #898989; */
 }
 
 /**
  * Menu bars
  */
 .menu-bars {
-  font-size: 30rem;
+  font-size: 45rem;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 17px;
+  right: 20px;
   display: none;
   cursor: pointer;
+  text-align: center;
+}
+.menu-bars .hamburger {
+  display: block;
 }
 .menu-bars small {
-  font-size: 10rem;
+  font-size: 12rem;
+  display: block;
 }
 
 /**
@@ -516,31 +523,43 @@ body {
   .main-menu {
     width: 44%;
   }
+  .main-menu ul li {
+    margin: 0 10px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .container {
     padding: 0 20px;
   }
+  #header {
+    height: 168px;
+  }
+  .logo {
+    top: 10px;
+    height: 70px;
+  }
   .main-menu {
-    width: 75%;
-    margin-top: 23px;
+    width: 70%;
+    margin-top: 37px;
     height: 22px;
   }
   .secondary-menu {
-    width: 85%;
+    width: 100%;
     margin-top: 0;
     position: absolute;
     right: 0;
-    top: 61px;
+    top: 90px;
+    background-color: #d31f27;
   }
   .secondary-menu ul li {
     margin-left: 0;
     border-radius: 0;
+    width: 33.33%;
   }
   .secondary-menu ul li a {
-    font-size: 16rem;
-    height: 40px;
-    line-height: 2.5em;
+    font-size: 20rem;
+    height: 70px;
+    line-height: 3.5em;
   }
 }
 @media only screen and (max-width: 860px) {
@@ -549,6 +568,9 @@ body {
   }
   .main-menu {
     display: none;
+  }
+  .secondary-menu {
+    top: 90px;
   }
   #slider .message {
     transform: translate(-50%, 70%);
@@ -584,11 +606,10 @@ body {
   }
 }
 @media only screen and (max-width: 800px) {
-  .logo img {
-    width: 150px;
-  }
-  .secondary-menu {
-    width: 85%;
+  .secondary-menu ul li a {
+    font-size: 16rem;
+    height: 70px;
+    line-height: 4.4em;
   }
   .facebook-posts {
     height: 455px;
@@ -598,38 +619,17 @@ body {
   .container {
     padding: 0;
   }
-  #header {
-    height: 150px;
-  }
   .logo img {
     left: 10px;
   }
-  .secondary-menu {
-    width: 80%;
-    background-color: #d31f27;
-  }
-  .secondary-menu ul li a {
-    border-radius: 0;
-    font-size: 16rem;
-    height: 80px;
-    line-height: 5em;
-  }
 }
 @media only screen and (max-width: 540px) {
-  .secondary-menu {
-    width: 77%;
-  }
-  .secondary-menu ul li {
-    height: 80px;
-    width: 30%;
-  }
   .secondary-menu ul li i {
     display: block;
-    padding: 15px 0 5px;
+    padding: 14px 0 5px;
   }
   .secondary-menu ul li a {
-    font-size: 10rem;
-    height: auto;
+    font-size: 11rem;
     line-height: normal;
   }
   #bulletin .box-w50 .text-overlay {
@@ -644,14 +644,11 @@ body {
   .facebook-posts {
     height: auto;
   }
+  .video-highlight, .image-highlight {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 440px) {
-  .secondary-menu {
-    width: 70%;
-  }
-  .secondary-menu ul li {
-    width: 29%;
-  }
   #slider .message h2 {
     font-size: 450%;
     line-height: 10vw;
@@ -662,8 +659,5 @@ body {
     top: 15px;
     left: -5px;
     width: 130px;
-  }
-  .secondary-menu {
-    width: 75%;
   }
 }
