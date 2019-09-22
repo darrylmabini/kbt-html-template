@@ -108,6 +108,9 @@ body {
   background-color: #fed115;
   color: #484848 !important;
 }
+.bg-yellow * {
+  color: #484848 !important;
+}
 .bg-green {
   /* background-color: #50af47; */
   background-color: #0c884a;
@@ -117,6 +120,27 @@ body {
 }
 .bg-line-white {
   border: 3px solid #ffffff;
+}
+.img-holder {
+  position: relative;
+  float: none;
+  margin: 0;
+  width: auto;
+  height: 100%;
+  display: block;
+}
+.img-holder img {
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /**
@@ -178,6 +202,21 @@ body {
 }
 
 /**
+ * Menu bars
+ */
+.menu-bars {
+  font-size: 30rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  cursor: pointer;
+}
+.menu-bars small {
+  font-size: 10rem;
+}
+
+/**
  * Main menu
  */
 .main-menu {
@@ -212,15 +251,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin-bottom: 0;
 }
 .secondary-menu ul li {
   margin-left: 5px;
   width: 31%;
+  border-radius: 3px;
+}
+.secondary-menu ul li i {
+  display: none;
+  font-size: 30rem;
+  color: #ffffff;
+  text-align: center;
 }
 .secondary-menu ul li a {
   color: #fff;
-  background-color: #d31f27;
-  border-radius: 3px;
   font-family: "AvenirLT-Heavy";
   font-size: 14rem;
   height: 32px;
@@ -229,13 +274,6 @@ body {
   text-align: center;
   padding: 0 10px;
   width: 100%;
-}
-.secondary-menu ul li:nth-child(2) a {
-  background-color: #507ab4;
-}
-.secondary-menu ul li:nth-child(3) a {
-  background-color: #fed115;
-  color: #484848;
 }
 
 /**
@@ -256,6 +294,7 @@ body {
   color: #ffffff;
   letter-spacing: 1px;
   width: 100%;
+  padding: 0 40px;
   margin-bottom: 10px;
   text-shadow: #000000 1px 1px 15px;
   text-align: center;
@@ -415,7 +454,7 @@ body {
  */
 #bulletin {
   background-color: #ffffff;
-  padding: 30px 40px 40px;
+  padding: 30px 0 40px;
 }
 #bulletin .flexbox {
   height: 360px;
@@ -468,5 +507,150 @@ body {
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+  .main-menu {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+  .main-menu {
+    width: 75%;
+    margin-top: 23px;
+    height: 22px;
+  }
+  .secondary-menu {
+    width: 85%;
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: 61px;
+  }
+  .secondary-menu ul li {
+    margin-left: 0;
+    border-radius: 0;
+  }
+  .secondary-menu ul li a {
+    font-size: 16rem;
+    height: 40px;
+    line-height: 2.5em;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .menu-bars {
+    display: block;
+  }
+  .main-menu {
+    display: none;
+  }
+  #slider .message {
+    transform: translate(-50%, 70%);
+  }
+  .facebook-posts {
+    height: 320px;
+  }
+  #bulletin .box-w50 {
+    width: 100%;
+  }
+  #bulletin .box-w25 {
+    width: 50%;
+  }
+  #bulletin .flexbox {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #bulletin .text-overlay-top {
+    position: relative;
+    padding: 20px;
+  }
+  #bulletin .box-w50 .text-overlay {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .logo img {
+    width: 150px;
+  }
+  .secondary-menu {
+    width: 85%;
+  }
+  .facebook-posts {
+    height: 455px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: 0;
+  }
+  #header {
+    height: 150px;
+  }
+  .logo img {
+    left: 10px;
+  }
+  .secondary-menu {
+    width: 80%;
+    background-color: #d31f27;
+  }
+  .secondary-menu ul li a {
+    border-radius: 0;
+    font-size: 16rem;
+    height: 80px;
+    line-height: 5em;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .secondary-menu {
+    width: 77%;
+  }
+  .secondary-menu ul li {
+    height: 80px;
+    width: 30%;
+  }
+  .secondary-menu ul li i {
+    display: block;
+    padding: 15px 0 5px;
+  }
+  .secondary-menu ul li a {
+    font-size: 10rem;
+    height: auto;
+    line-height: normal;
+  }
+  #bulletin .box-w50 .text-overlay {
+    width: 100%;
+  }
+  .box, .col {
+    width: 100% !important;
+  }
+  .row, .flexbox {
+    flex-wrap: wrap !important;
+  }
+  .facebook-posts {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .secondary-menu {
+    width: 70%;
+  }
+  .secondary-menu ul li {
+    width: 29%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .logo img {
+    top: 15px;
+    left: -5px;
+    width: 130px;
+  }
+  .secondary-menu {
+    width: 75%;
   }
 }
